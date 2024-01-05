@@ -24,10 +24,11 @@
 .section-1-heading:hover {
   font-weight: 700;
   background: -webkit-linear-gradient(#000328, #00458e);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .img-caro {
-  max-width: 6rem;
+  max-width: 50rem;
 }
