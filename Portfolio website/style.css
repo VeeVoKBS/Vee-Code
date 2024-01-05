@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+/* Reset and common style */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-heading {
+  font-size: 4rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 15rem;
+  border-bottom: 0.3rem solid #333;
+  /* text-shadow: 0.2rem 0.2rem 0.5rem #555; */
+}
+
+/* End of Reset and common style */
+
+/* Section 1 */
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#5899e2, #fff);
+  background-size: cover;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.section-1-heading {
+  font-size: 6rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  cursor: pointer;
+  transition: font-weight 250ms ease-in-out;
+}
+
+.section-1-heading:hover {
+  font-weight: 700;
+  background: -webkit-linear-gradient(#000328, #00458e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.person-img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 5rem;
+  box-shadow: 0.125rem 0.125rem 0.5rem 0.5rem rgb(113 108 108 / 53%);
+}
+
+.person-name {
+  font-size: 2rem;
+  color: #00458e;
+  letter-spacing: 0.3rem;
+  margin-bottom: 0;
+}
+/* End of Section 1 */
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 6rem;
+  background-color: #5899e2;
+  box-shadow: 0.125rem 0.125rem 0.25rem #555;
+  position: absolute;
+  z-index: 300;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.navbar-link {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #333;
+  margin: 0 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  float: left;
+  width: fit-content;
+  display: flexbox;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.2rem solid transparent;
+  text-decoration: none;
+}
+
+.change.navbar-link {
+  color: #fff;
+}
+
+/* .change.navbar-link::before {
+  width: auto;
+} */
+.navbar-link:hover {
+  color: #fff;
+  border-bottom: 0.2rem solid #fff;
+}
+
+/* End of Navbar */
+
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  height: 100%;
+  padding: 15rem 0 10rem 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-bars-wrapper {
+  margin-bottom: 10rem;
+}
+
+.progress-bar {
+  width: 60rem;
+  height: 3rem;
+  background-color: #ccc;
+  margin: 1.5rem 0;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem #555;
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  left: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.progress-text span {
+  margin: 0 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.progress-percent-1 {
+  width: 99%;
+  height: 100%;
+  background-color: #5899e2;
+  border-radius: 0.3rem;
+}
+
+.progress-percent-2 {
+  width: 88%;
+  height: 100%;
+  background-color: #5899e2;
+  border-radius: 0.3rem;
+}
+
+.progress-percent-3 {
+  width: 70%;
+  height: 100%;
+  background-color: #5899e2;
+  border-radius: 0.3rem;
+}
+
+.progress-percent-4 {
+  width: 70%;
+  height: 100%;
+  background-color: #5899e2;
+  border-radius: 0.3rem;
+}
+
+.services {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.service {
+  text-align: center;
+}
+
+.service i {
+  font-size: 8rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.service h2 {
+  font-size: 2rem;
+  color: #000328;
+}
+
+/* End of Section 2 */
+
+/* Section 3 */
+.section-3 {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0;
+  background-color: #eef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-wrapper {
+  /* width: 100%; */
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 5%;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
+}
+
+.project:hover {
+  box-shadow: 1rem 1rem 1rem #777;
+}
+
+.project-text {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  top: -10rem;
+  position: absolute;
+  transition: top 0.3s;
+  z-index: 10;
+}
+
+.project:hover .project-text {
+  top: 5rem;
+  transition: top 0.3s 0.3s;
+}
+
+.project-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.project-technologies {
+  font-size: 1.8rem;
+  color: #00458e;
+}
+
+.project-img {
+  width: 40rem;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project-img {
+  opacity: 0.2;
+}
+
+.project-link {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  bottom: -5rem;
+  transition: bottom 0.3s;
+}
+
+.project:hover .project-link {
+  bottom: 5rem;
+  color: #00458e;
+  text-decoration: underline;
+  transition: bottom 0.3s 0.3s;
+}
+/* End of Section 3 */
+
+/* section 4 */
+.section-4 {
+  width: 100%;
+  height: 70vh;
+  background-color: #5899e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-4-heading {
+  margin-bottom: 5rem;
+  font-weight: 500;
+}
+
+.contact-form {
+  width: 40rem;
+  flex-direction: column;
+  border-radius: 5%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.contact-form textarea {
+  height: 10rem;
+  max-height: 15rem;
+  max-width: 100%;
+}
+
+.contact-form-btn {
+  background-color: #00458e;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: #fff;
+}
+/* End of section 4 */
+
+/* Section 5 */
+.section-5 {
+  width: 100%;
+  height: 30vh;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media {
+  margin-bottom: 5rem;
+}
+
+.social-media-link {
+  margin: 0 2rem;
+  padding: 0.7rem;
+  background-color: #00458e;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.social-media-link i {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+}
+/* End of Section 5 */
