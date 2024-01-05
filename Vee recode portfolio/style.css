@@ -1,0 +1,33 @@
+.bg-light {
+  background: linear-gradient(#5899e2, #fff) !important;
+}
+
+/* .navbar {
+  align-items: center;
+  justify-content: center !important;
+} */
+.text-primary {
+  color: #020079 !important;
+}
+
+.section-1-heading {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  cursor: pointer;
+  transition: font-weight 250ms ease-in-out;
+}
+
+.section-1-heading:hover {
+  font-weight: 700;
+  background: -webkit-linear-gradient(#000328, #00458e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img-caro {
+  max-width: 6rem;
+}
