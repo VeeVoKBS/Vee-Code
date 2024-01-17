@@ -1,0 +1,173 @@
+/* General setting */
+.bg-secondary {
+  background-color: rgb(250, 218, 223) !important;
+}
+
+.logo {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s !important;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #333;
+  margin: 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.2s;
+  float: left;
+  width: fit-content;
+  display: flexbox;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* End of General setting */
+
+/* About */
+.abt-img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* Recipes */
+.cake-recipes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes-wrapper {
+  flex-wrap: wrap;
+}
+.reps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
+}
+
+.reps:hover {
+  box-shadow: 6px 6px 6px #777;
+  padding: 10px;
+}
+
+.reps-text {
+  text-align: center;
+  letter-spacing: 1.6px;
+  top: -160px;
+  position: absolute;
+  transition: top 0.3s;
+  z-index: 10;
+}
+
+.reps:hover .reps-text {
+  top: 140px;
+  transition: top 0.3s 0.3s;
+}
+
+.reps-name {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(5, 5, 75);
+  text-transform: capitalize;
+}
+.cooking-hour {
+  font-size: 14px;
+  color: black;
+}
+
+.reps-img {
+  width: 300px;
+
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  transition: filter 0.5s ease-in-out;
+}
+
+.reps:hover .reps-img {
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+.reps-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: -60px;
+  transition: bottom 0.3s;
+}
+
+.reps:hover .reps-link {
+  bottom: 60px;
+  color: #00458e;
+  transition: bottom 0.3s 0.3s;
+}
+
+/* End of Recipes */
+
+/* Blog  */
+.cake-img {
+  width: 100%;
+  height: auto !important;
+}
+
+/* End of Blog */
+
+/* Footer */
+
+.footer-cake {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media {
+  margin-bottom: 30px;
+}
+
+.social-media-link {
+  margin: 8px;
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.social-media-link i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+/* End of Footer */

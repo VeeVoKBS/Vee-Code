@@ -30,5 +30,10 @@
 }
 
 .img-caro {
-  max-width: 50rem;
+  max-width: 70rem;
+}
+
+.border-white {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-white-rgb), var(--bs-border-opacity)) !important;
 }

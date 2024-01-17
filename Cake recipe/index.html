@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Cake Recipes</title>
+  </head>
+  <body class="bg-light">
+    <header class="bg-secondary pt-4 ps-4">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <figure class="navbar-brand position-start">
+            <div class="row align-items-start">
+              <div class="col">
+                <img
+                  src="./images/cake-recipe.png"
+                  alt="Cake Recipe"
+                  width="80px"
+                  height="80px"
+                />
+              </div>
+              <div class="col align-self-center">
+                <figcaption class="fw-bold fs-4">Cake Recipes</figcaption>
+              </div>
+            </div>
+          </figure>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recipe.html">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./shopping.html">Shopping List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="p-4 m-4">
+      <article>
+        <h1 class="text-secondary text-center">Welcome To Cake Recipes!</h1>
+        <p class="text-wrap">
+          Step into a world where the aroma of freshly baked wonders fills the
+          air and the joy of creating delightful treats knows no bounds. Here at
+          Cake Recipes, we extend our warmest welcome to all passionate bakers
+          and dessert enthusiasts. Whether you're here to discover mouthwatering
+          recipes, seek baking inspiration, or connect with a community that
+          shares your love for all things sweet, you've found your haven.
+          Embrace the sweet journey ahead, where every click unveils a new layer
+          of delicious possibilities. Let the baking adventures begin!
+        </p>
+        <p>
+          <a href="./recipe.html">Find your new cake recipes!</a>
+        </p>
+
+        <div class="row pt-4">
+          <div class="col order-1">
+            <section class="border border-2 border-secondary rounded">
+              <h3 class="p-2 text-center">Let's us know more about you</h3>
+              <form class="px-4 py-2">
+                <div class="mb-3">
+                  <label class="form-label" for="user-name">User name</label>
+                  <input
+                    class="form-control"
+                    id="user-name"
+                    required
+                    maxlength="12"
+                    placeholder="anne.cake"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="favorite-cake-recipe"
+                    >Favorite cake recipe</label
+                  >
+                  <input
+                    class="form-control"
+                    id="favorite-cake-recipe"
+                    placeholder="tiramisu"
+                  />
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer-cake">
+      <div class="social-media">
+        <a href="#none" class="social-media-link">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#none" class="social-media-link">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="#none" class="social-media-link">
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a href="#none" class="social-media-link">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <p class="copyright text-wrap">
+        Copyright &copy; Cake Recipes. All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
